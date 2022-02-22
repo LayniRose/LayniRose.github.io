@@ -10,8 +10,8 @@
         <img id="space_place" src="images/SpacePlace.jpg" crossorigin="anonymous" />
         <img id="campus" src="images/campus.jpg" crossorigin="anonymous" />
         <img id="lobby" src="images/lobby.jpg" crossorigin="anonymous" />
-		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
-		<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
+		<img id="sky" src="images/grass.jpg" crossorigin="anonymous" />
+		<img id="crate" src="images/sky.jpg" crossorigin="anonymous" />
 		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
 		<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
 	</a-assets>
@@ -40,21 +40,23 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #space_place"      
       ></a-entity material>  
-     <a-box
+     <a-entity material=
         position="0 2 2.5"
         scale=".2 .2 .2" 
+	gltf-model="models/Schoolhouse.glb"
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
-      ></a-box> 
-     <a-box
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #campus"     
+      ></a-entity material> 
+     <a-entity material
         position="2 2 2.5"
         scale=".2 .2 .2" 
+	gltf-model="models/Chair.glb"
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #marriot"     
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #lobby"     
       ></a-box> 
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
