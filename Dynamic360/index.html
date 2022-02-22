@@ -10,10 +10,8 @@
         <img id="space_place" src="images/SpacePlace.jpg" crossorigin="anonymous" />
         <img id="campus" src="images/campus.jpg" crossorigin="anonymous" />
         <img id="lobby" src="images/lobby.jpg" crossorigin="anonymous" />
-		<img id="sky" src="images/grass.jpg" crossorigin="anonymous" />
-		<img id="crate" src="images/sky.jpg" crossorigin="anonymous" />
-		<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
-		<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
+	<img id="sky" src="images/grass.jpg" crossorigin="anonymous" />
+	
 	</a-assets>
 		
 	<a-sky 
@@ -22,7 +20,7 @@
 	</a-sky>
     
 	    
-      <a-entity material=
+      <a-entity material
         position="-2 2 -2"
         scale=".7 .7 .7" 
 	gltf-model="models/Palm Tree.glb"
@@ -31,7 +29,7 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #resort"      
       ></a-entity>  
-     <a-entity material=
+     <a-entity material
         position="2 2 -2"
         scale=".2 .2 .2" 
 	gltf-model="models/Moon.glb"
@@ -40,7 +38,7 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #space_place"      
       ></a-entity material>  
-     <a-entity material=
+     <a-entity material
         position="0 2 2.5"
         scale=".2 .2 .2" 
 	gltf-model="models/Schoolhouse.glb"
