@@ -5,7 +5,7 @@
     <a-scene antialias="true">
 	
 	<a-assets>
-		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
+		
         <img id="resort" src="images/resort.jpg" crossorigin="anonymous" />
         <img id="space_plane" src="images/SpacePlace.jpg" crossorigin="anonymous" />
         <img id="marriot" src="images/marriot.jpg" crossorigin="anonymous" />
@@ -21,17 +21,16 @@
 		material = "src: #sky">
 	</a-sky>
     
-
-      <a-entity material="opacity: 0.7;" position="-2 1 -2" gltf-model="models/Palm Tree.glb" scale=".7 .7 .7" rotation="0 0 0"></a-entity
 	    
-      <a-box
+      <a-entity material=
         position="-2 2 -2"
-        scale=".2 .2 .2"     
-        rotation="0 45 0"
+        scale=".7 .7 .7" 
+	gltf-model="models/Palm Tree.glb"
+        rotation="0 0 0"
         value="Nine O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #old_church"      
-      ></a-box>  
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #resort"      
+      ></a-entity>  
      <a-box
         position="2 2 -2"
         scale=".2 .2 .2" 
