@@ -8,8 +8,8 @@
 		
         <img id="resort" src="images/resort.jpg" crossorigin="anonymous" />
         <img id="space_place" src="images/SpacePlace.jpg" crossorigin="anonymous" />
-        <img id="campus" src="images/campus.jpg" crossorigin="anonymous" />
-        <img id="lobby" src="images/lobby.jpg" crossorigin="anonymous" />
+        <img id="campus" src="images/Campus.jpeg" crossorigin="anonymous" />
+        <img id="lobby" src="images/Lobby.jpeg" crossorigin="anonymous" />
 	<img id="sky" src="images/sky.jpg" crossorigin="anonymous" />
 	
 	</a-assets>
@@ -22,13 +22,13 @@
 	    
       <a-entity material
         position="-2 2 -2"
-        scale=".7 .7 .7" 
-	gltf-model="models/Palm Tree.glb"
+        scale="1 1 1" 
+	gltf-model="models/Palm tree.glb"
         rotation="0 0 0"
         value="Nine O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #resort"      
-      ></a-entity>  
+      ></a-entity material>  
      <a-entity material
         position="2 2 -2"
         scale=".01 .01 .01"
@@ -55,7 +55,7 @@
         value="Six O'Clock"
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #lobby"     
-      ></a-box> 
+      ></a-entity material> 
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
