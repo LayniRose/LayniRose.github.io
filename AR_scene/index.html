@@ -1,0 +1,98 @@
+<html> 
+  
+  <head>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"> </script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <title>A-Frame: Environment component</title>
+	<meta name="description" content="A-Frame Examples">
+	<script src="js/aframe-master.1.0.4.min.js"></script>
+	<script src="js/aframe-environment-component.min.js"></script>
+  </head>
+  
+  <body>
+    
+    <a-scene>
+        <a-box color="white" position="4 5 -10" scale="4 10 4"> </a-box>
+        <a-box  position="-4 5 -10" color="white" scale="4 10 4"> </a-box>
+        <a-box rotate="-90 -90 -180" position="0 5 -10" color="white" scale="10 2 4"></a-box>
+       
+        <a-box  position="-4 .75 -2" color="brown" scale="3 .25 2"> </a-box>
+        <a-box  position="-4 1.15 -2.75" color="brown" scale=".25 1 .25"> </a-box>
+        <a-box  position="-4.75 1.15 -2.75" color="brown" scale=".25 1 .25"> </a-box>
+        <a-box  position="-3.25 1.15 -2.75" color="brown" scale=".25 1 .25"> </a-box>
+        <a-box  position="-2.80 1.15 -2.75" color="brown" scale=".25 1 .25"> </a-box>
+        <a-box  position="-5.20 1.15 -2.75" color="brown" scale=".25 1 .25"> </a-box>
+
+        <a-box  position="-4 1.15 -1.25" color="brown" scale=".25 1 .25"> </a-box>
+        <a-box  position="-4.75 1.15 -1.25" color="brown" scale=".25 1 .25"> </a-box>
+        <a-box  position="-3.25 1.15 -1.25" color="brown" scale=".25 1 .25"> </a-box>
+        <a-box  position="-2.80 1.15 -1.25" color="brown" scale=".25 1 .25"> </a-box>
+        <a-box  position="-5.20 1.15 -1.25" color="brown" scale=".25 1 .25"> </a-box>
+        
+        <a-box  position="-2.80 1.15 -1.75" color="brown" scale=".25 1 .25"> </a-box>
+        <a-box  position="-2.80 1.15 -2.25" color="brown" scale=".25 1 .25"> </a-box>
+
+        <a-box  position="-5.20 1.15 -1.75" color="brown" scale=".25 1 .25"> </a-box>
+        <a-box  position="-5.20 1.15 -2.25" color="brown" scale=".25 1 .25"> </a-box>
+
+        <a-box  position="-3.9 1.5 -2.75" color="brown" scale="2.5 .25 .25"> </a-box>
+        <a-box  position="-3.9 1.5 -1.25" color="brown" scale="2.5 .25 .25"> </a-box>
+
+        <a-cylinder rotation="90 0 0" position="-3 .35 -2.65" color="white" height=".25" radius=".5" material.width=".25"></a-cylinder>
+        <a-cylinder rotation="90 0 0" position="-5.20 .35 -2.65" color="white" height=".25" radius=".5" material.width=".25"></a-cylinder>
+        <a-cylinder rotation="90 0 0" position="-3 .35 -1.25" color="white" height=".25" radius=".5" material.width=".25"></a-cylinder>
+        <a-cylinder rotation="90 0 0" position="-5.20 .35 -1.25" color="white" height=".25" radius=".5" material.width=".25"></a-cylinder>
+
+        <a-sphere position="1 .5 -2" color="yellow" radius=".75"></a-sphere>
+        <a-sphere position="2 .5 -2" color="yellow" radius=".75"></a-sphere>
+        <a-sphere position="3 .5 -2" color="yellow" radius=".75"></a-sphere>
+        <a-sphere position="4 .5 -2" color="yellow" radius=".75"></a-sphere>
+        <a-sphere position="5 .5 -2" color="yellow" radius=".75"></a-sphere>
+        <a-sphere position=".85 .25 -1.15" color="red" radius=".25"></a-sphere>
+        <a-sphere position="1.85 .25 -1.15" color="red" radius=".25"></a-sphere>
+        <a-sphere position="2.85 .25 -1.15" color="red" radius=".25"></a-sphere>
+        <a-sphere position="3.85 .25 -1.15" color="red" radius=".25"></a-sphere>
+        <a-sphere position="4.85 .25 -1.15" color="red" radius=".25"></a-sphere>
+
+        <a-sphere position=".85 .25 -2.85" color="red" radius=".25"></a-sphere>
+        <a-sphere position="1.85 .25 -2.85" color="red" radius=".25"></a-sphere>
+        <a-sphere position="2.85 .25 -2.85" color="red" radius=".25"></a-sphere>
+        <a-sphere position="3.85 .25 -2.85" color="red" radius=".25"></a-sphere>
+        <a-sphere position="4.85 .25 -2.85" color="red" radius=".25"></a-sphere>
+        
+        <a-sphere position="6 1 -2" color="yellow" radius=".75"></a-sphere>
+        <a-sphere position="6.70 1.25 -2" color="blue" radius=".15"></a-sphere>
+        <a-sphere position="6.6 1.50 -2.15" color="black" radius=".1"></a-sphere>
+        <a-sphere position="6.6 1.50 -1.75" color="black" radius=".1"></a-sphere>
+
+        <a-cylinder height=".07" position="6 1.75 -2" color="purple" radius=".5"> </a-cylinder>
+        <a-cylinder height=".5" position="6 2 -2" color="purple" radius=".40"> </a-cylinder>
+
+        <a-cylinder height="10" position="0 1.25 -2" color="black" radius=".01" rotation="90 90 0"> </a-cylinder>
+      
+
+        <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+        
+   
+         <a-assets>
+          <img id="skyTexture"
+            src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+        </a-assets>
+      
+        
+      
+        <a-sky src="#skyTexture"></a-sky>
+
+        <a-plane
+          width="100" height="100"
+          position=" 0.00 0.00 0.00" 
+          rotation="-90 0 0" 
+          color="#24ab15" 
+          material="src: #grass; repeat:10 10; transparent: true; opacity: 0.75"
+          shadow="cast: true; receive: false">
+        </a-plane>
+    </a-scene>
+   
+  </body>
+  
+</html>
